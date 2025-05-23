@@ -1,0 +1,66 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* overriding global properties*/
+
+body {
+    background: url("bg.jpg");
+    /* Set the background url of the body */
+    min-height: 100vh;
+    /* viewport height */
+    background-size: 100vw 100vh;
+    /* viewport size */
+    background-repeat: no-repeat;
+    /*for multiple monitors */
+    display: flex;
+    justify-content: center;
+    /* to center the image */
+    align-items: center;
+}
+
+/* body styling properties*/
+
+#playArea {
+    /* id attributes*/
+    background: linear-gradient(rgb(147, 249, 147), rgb(249, 249, 142));
+    width: 90vmin;
+    height: 92vmin;
+    border: 2px solid black;
+    display: grid;
+    /* for positioning of food inside play area */
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+}
+
+/* playArea id inside div container*/
+
+.snake {
+    /* class attributes*/
+    background-color: purple;
+}
+
+.food {
+    background-color: yellow;
+}
+
+.head {
+    background-color: red;
+}
+
+#scorebox {
+    position: absolute;
+    top: 10px;
+    right: 200px;
+    font-size: 39px;
+    font-weight: bold;
+}
+
+#hiscorebox {
+    position: absolute;
+    top: 65px;
+    right: 162px;
+    font-size: 39px;
+    font-weight: bold;
+}
